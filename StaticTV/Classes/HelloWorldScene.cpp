@@ -67,6 +67,7 @@ bool HelloWorld::init()
 
     // position the sprite on the center of the screen
     pSprite->setPosition( ccp(size.width/2, size.height/2) );
+    pSprite->setScale(1.5);
 
     // add the sprite as a child to this layer
     this->addChild(pSprite, 0);
@@ -75,8 +76,17 @@ bool HelloWorld::init()
     //Shader Effects:
     _uniformSprites=CCArray::create();
     _uniformSprites->retain();
-    
     addStaticTVEffectToSprite(pSprite);
+    
+    CCSprite * sadako=CCSprite::create("sadako.png");
+    sadako->setPosition(ccp(size.width/2,size.height/3));
+    addChild(sadako);
+    CCDelayTime * delay=CCDelayTime::create(1.5);
+    CCMoveBy*moveRight=CCMoveBy::create(.01, ccp(15,0));
+    CCMoveBy*moveLeft=CCMoveBy::create(.01, ccp(-30,0));
+    CCFiniteTimeAction*seq=CCSequence::create(delay, moveRight,moveLeft,moveRight);
+    CCRepeatForever*repeat=CCRepeatForever::create((CCSequence *)seq);
+    sadako->runAction(repeat);
     return true;
 }
 

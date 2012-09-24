@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		490FD660160FF2EA00390080 /* sadako.png in Resources */ = {isa = PBXBuildFile; fileRef = 490FD65F160FF2EA00390080 /* sadako.png */; };
 		4994A30D160FE77B007BFA71 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4994A30C160FE77B007BFA71 /* QuartzCore.framework */; };
 		4994A30F160FE77B007BFA71 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4994A30E160FE77B007BFA71 /* OpenGLES.framework */; };
 		4994A311160FE77B007BFA71 /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4994A310160FE77B007BFA71 /* OpenAL.framework */; };
@@ -196,6 +197,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		490FD65F160FF2EA00390080 /* sadako.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = sadako.png; path = Resources/sadako.png; sourceTree = "<group>"; };
 		4994A308160FE77B007BFA71 /* StaticTV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StaticTV.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4994A30C160FE77B007BFA71 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		4994A30E160FE77B007BFA71 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
@@ -664,6 +666,7 @@
 			children = (
 				4994A58F160FE7C9007BFA71 /* Shaders */,
 				4994A31E160FE77B007BFA71 /* CloseNormal.png */,
+				490FD65F160FF2EA00390080 /* sadako.png */,
 				4994A320160FE77B007BFA71 /* CloseSelected.png */,
 				4994A322160FE77B007BFA71 /* Default.png */,
 				4994A324160FE77B007BFA71 /* HelloWorld.png */,
@@ -1483,6 +1486,7 @@
 				4994A331160FE77B007BFA71 /* Icon@2x.png in Resources */,
 				4994A333160FE77B007BFA71 /* iTunesArtwork in Resources */,
 				4994A3BB160FE77B007BFA71 /* ChangeLog in Resources */,
+				490FD660160FF2EA00390080 /* sadako.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1773,6 +1777,7 @@
 				4994A584160FE77D007BFA71 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

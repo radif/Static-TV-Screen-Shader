@@ -1,8 +1,10 @@
+//Radif Sharafullin
+//radif.sharafullin(at)gmail.com
+
 #ifdef GL_ES
 precision mediump float;
 #endif
 
-// 1
 varying vec2 v_texCoord;
 uniform float u_time;
 
